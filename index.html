@@ -1,0 +1,1883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MAHI Gardening & Plant Delivery Service | Gurgaon</title>
+
+  <meta
+    name="description"
+    content="MAHI Gardening & Plant Delivery Service provides gardening, plant delivery, lawn care and plant maintenance services in Gurgaon."
+  >
+
+  <meta
+    name="keywords"
+    content="gardening service Gurgaon, plant delivery Gurgaon, lawn maintenance, garden care, MAHI Gardening"
+  >
+
+  <meta name="author" content="MAHI Gardening & Plant Delivery Service">
+
+  <meta name="theme-color" content="#2f7d32">
+
+  <meta property="og:title" content="MAHI Gardening & Plant Delivery Service">
+  <meta
+    property="og:description"
+    content="Professional gardening and plant delivery services in Gurgaon."
+  >
+  <meta property="og:type" content="website">
+
+  <style>
+  
+  
+    
+:root {
+  --primary: #2f7d32;
+  --primary-dark: #205c25;
+  --primary-light: #e7f5e7;
+
+  --text: #172318;
+  --text-light: #637064;
+
+  --background: #ffffff;
+  --surface: #f6faf5;
+  --border: #e2ebe0;
+
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --shadow: 0 12px 35px rgba(38, 91, 42, 0.1);
+}
+
+[data-theme="dark"] {
+  --primary: #80d884;
+  --primary-dark: #a5eca9;
+  --primary-light: #203b24;
+
+  --text: #edf8ed;
+  --text-light: #b7c7b8;
+
+  --background: #101710;
+  --surface: #172218;
+  --border: #2d4030;
+
+  --header-bg: rgba(16, 23, 16, 0.96);
+  --shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+}
+
+/* Basic Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.6;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Main Container */
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.section {
+  padding: 58px 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.9rem, 6vw, 3rem);
+  line-height: 1.2;
+}
+
+.section-heading p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Header - Mobile First */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+}
+
+.nav-container {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  margin-right: auto;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--primary-light);
+  font-size: 1.35rem;
+}
+
+.logo strong {
+  display: block;
+  color: var(--primary);
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+
+.logo small {
+  display: block;
+  margin-top: 3px;
+  color: var(--text-light);
+  font-size: 0.57rem;
+  line-height: 1.2;
+}
+
+.hamburger {
+  display: block;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  padding: 7px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  cursor: pointer;
+  order: 2;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 4px 0;
+  border-radius: 5px;
+  background: var(--text);
+  transition: 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.main-nav {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  padding: 10px 18px;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.main-nav.open {
+  display: flex;
+}
+
+.main-nav a {
+  padding: 13px 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+}
+
+.main-nav a:last-child {
+  border-bottom: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  order: 3;
+}
+
+.icon-button {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.icon-button:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.whatsapp-button {
+  color: #20a64a;
+}
+
+/* Buttons */
+
+.btn {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background: #20a64a;
+  color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+  background: #168238;
+  transform: translateY(-2px);
+}
+
+/* Hero - Mobile First */
+
+.hero-section {
+  padding: 55px 0 35px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at top right,
+      var(--primary-light),
+      transparent 55%
+    );
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin-bottom: 20px;
+  font-size: clamp(2.45rem, 12vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: var(--primary);
+}
+
+.hero-content p {
+  max-width: 570px;
+  margin: 0 auto 25px;
+  color: var(--text-light);
+  font-size: 0.98rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-buttons .btn {
+  width: 100%;
+}
+
+.hero-features {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 23px;
+  color: var(--text-light);
+  font-size: 0.82rem;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 310px;
+  display: grid;
+  place-items: center;
+}
+
+.hero-circle {
+  position: absolute;
+  width: min(285px, 85vw);
+  aspect-ratio: 1;
+  border: 2px dashed var(--primary);
+  border-radius: 50%;
+  background: var(--primary-light);
+}
+
+.hero-main-plant {
+  position: relative;
+  z-index: 2;
+  width: 175px;
+  height: 225px;
+  display: grid;
+  place-items: center;
+  border-radius: 48% 48% 18% 18%;
+  background: linear-gradient(145deg, #8bd48c, #2f7d32);
+  box-shadow: var(--shadow);
+  font-size: 5.8rem;
+  transform: rotate(-4deg);
+}
+
+.plant-card {
+  position: absolute;
+  z-index: 3;
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+  font-size: 2rem;
+}
+
+.plant-card-one {
+  top: 20px;
+  left: 5%;
+  transform: rotate(-10deg);
+}
+
+.plant-card-two {
+  right: 5%;
+  bottom: 55px;
+  transform: rotate(10deg);
+}
+
+.floating-card {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 50%;
+  width: min(215px, 80%);
+  padding: 12px 15px;
+  transform: translateX(-50%);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.floating-card strong,
+.floating-card span {
+  display: block;
+}
+
+.floating-card strong {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.floating-card span {
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+/* Services */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.service-card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  transition: 0.25s ease;
+}
+
+.service-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  background: var(--primary-light);
+  font-size: 1.8rem;
+}
+
+.service-card h3 {
+  margin-bottom: 9px;
+  font-size: 1.15rem;
+}
+
+.service-card p {
+  margin-bottom: 16px;
+  color: var(--text-light);
+  font-size: 0.92rem;
+}
+
+.service-card a {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* About */
+
+.about-section {
+  background: var(--surface);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+  min-height: 280px;
+}
+
+.about-image {
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #b9e7b8, #397e3c);
+  box-shadow: var(--shadow);
+  font-size: 7rem;
+}
+
+.about-badge {
+  position: absolute;
+  right: 10px;
+  bottom: -15px;
+  min-width: 125px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.about-badge strong,
+.about-badge span {
+  display: block;
+}
+
+.about-badge strong {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+
+.about-badge span {
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
+.about-content h2 {
+  margin-bottom: 17px;
+  font-size: clamp(1.9rem, 7vw, 3rem);
+  line-height: 1.2;
+}
+
+.about-content p {
+  margin-bottom: 13px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.about-list {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 27px;
+  list-style: none;
+  font-size: 0.92rem;
+}
+
+/* Gallery */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.gallery-card {
+  position: relative;
+  isolation: isolate;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 23px;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.gallery-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.68),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.gallery-card span {
+  margin-bottom: auto;
+  font-size: 3.5rem;
+}
+
+.gallery-card h3 {
+  font-size: 1.1rem;
+}
+
+.gallery-one {
+  background: linear-gradient(145deg, #5a9d57, #214d28);
+}
+
+.gallery-two {
+  background: linear-gradient(145deg, #b6d88e, #648c3b);
+}
+
+.gallery-three {
+  background: linear-gradient(145deg, #72bda1, #24664e);
+}
+
+.gallery-four {
+  background: linear-gradient(145deg, #e6b66e, #a35a35);
+}
+
+/* Contact */
+
+.contact-section {
+  background: var(--surface);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.contact-info h2 {
+  margin-bottom: 17px;
+  font-size: clamp(1.9rem, 7vw, 3rem);
+  line-height: 1.2;
+}
+
+.contact-info > p {
+  margin-bottom: 25px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.contact-details {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--background);
+  transition: 0.2s ease;
+}
+
+.contact-item:hover {
+  border-color: var(--primary);
+  transform: translateX(3px);
+}
+
+.contact-item-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.contact-item strong,
+.contact-item small {
+  display: block;
+}
+
+.contact-item strong {
+  font-size: 0.92rem;
+}
+
+.contact-item small {
+  color: var(--text-light);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+
+.contact-form {
+  padding: 23px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+}
+
+.contact-form h3 {
+  margin-bottom: 22px;
+  font-size: 1.4rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 13px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+.form-note,
+.form-message {
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.form-note {
+  margin-top: 10px;
+  color: var(--text-light);
+}
+
+.form-message {
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+/* Footer */
+
+.site-footer {
+  padding-top: 45px;
+  background: #102014;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-bottom: 35px;
+}
+
+.footer-brand p {
+  max-width: 320px;
+  margin-top: 15px;
+  color: #b7c8b8;
+  font-size: 0.9rem;
+}
+
+.footer-logo strong {
+  color: #8be08f;
+}
+
+.footer-logo small {
+  color: #b7c8b8;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-links h3 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: #b7c8b8;
+  font-size: 0.88rem;
+}
+
+.footer-links a:hover {
+  color: #8be08f;
+}
+
+.footer-bottom {
+  padding: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #b7c8b8;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* Small Mobile Devices */
+
+@media (max-width: 360px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .logo strong {
+    font-size: 0.95rem;
+  }
+
+  .logo small {
+    font-size: 0.5rem;
+  }
+
+  .header-actions {
+    gap: 3px;
+  }
+
+  .icon-button {
+    width: 31px;
+    height: 31px;
+    font-size: 0.85rem;
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.35rem;
+  }
+
+  .hero-main-plant {
+    width: 155px;
+    height: 205px;
+    font-size: 5rem;
+  }
+
+  .plant-card-one {
+    left: 0;
+  }
+
+  .plant-card-two {
+    right: 0;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 600px) {
+  .container {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-buttons .btn {
+    width: auto;
+  }
+
+  .hero-features {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+/* Laptop and Desktop */
+
+@media (min-width: 900px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .section {
+    padding: 95px 0;
+  }
+
+  .nav-container {
+    min-height: 80px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .main-nav a {
+    padding: 0;
+    border: none;
+    color: var(--text-light);
+    font-size: 0.92rem;
+  }
+
+  .main-nav a:hover {
+    color: var(--primary);
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .icon-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    padding: 105px 0 90px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 65px;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+  }
+
+  .hero-content p {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.05rem;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-features {
+    justify-content: flex-start;
+  }
+
+  .hero-visual {
+    min-height: 450px;
+  }
+
+  .hero-circle {
+    width: 390px;
+  }
+
+  .hero-main-plant {
+    width: 245px;
+    height: 300px;
+    font-size: 8rem;
+  }
+
+  .plant-card {
+    width: 92px;
+    height: 92px;
+    font-size: 2.5rem;
+  }
+
+  .plant-card-one {
+    top: 45px;
+    left: 0;
+  }
+
+  .plant-card-two {
+    right: 0;
+    bottom: 65px;
+  }
+
+  .floating-card {
+    width: 220px;
+    padding: 16px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .service-card {
+    padding: 30px;
+  }
+
+  .about-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+  }
+
+  .about-visual {
+    min-height: 390px;
+  }
+
+  .about-image {
+    min-height: 390px;
+    font-size: 10rem;
+  }
+
+  .about-badge {
+    right: -20px;
+    bottom: 25px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .gallery-card {
+    min-height: 260px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 65px;
+  }
+
+  .contact-form {
+    padding: 32px;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+}
+/* =================================
+   FINAL MOBILE MENU FIX
+================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.nav-container {
+  position: relative;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Three-line button */
+
+.hamburger {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.hamburger span {
+  display: block;
+  width: 23px;
+  height: 3px;
+  margin: 0;
+  border-radius: 5px;
+  background: var(--text);
+  transition: 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile navigation */
+
+.main-nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+
+  display: none;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 12px 20px;
+
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+
+  z-index: 10000;
+}
+
+.main-nav.open {
+  display: flex !important;
+}
+
+.main-nav a {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.main-nav a:last-child {
+  border-bottom: none;
+}
+
+/* Mobile header arrangement */
+
+.logo {
+  margin-right: auto;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Laptop and desktop navigation */
+
+@media (min-width: 900px) {
+  .hamburger {
+    display: none !important;
+  }
+
+  .main-nav {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .main-nav a {
+    width: auto;
+    padding: 0;
+    border: none;
+    font-size: 15px;
+    color: var(--text-light);
+  }
+}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MAHI Gardening & Plant Delivery Service",
+    "description": "Professional gardening, plant delivery and garden maintenance service.",
+    "telephone": "+91-7060619307",
+    "email": "info@mahigardening.in",
+    "areaServed": "Gurgaon, Haryana, India",
+    "serviceType": [
+      "Gardening Service",
+      "Plant Delivery",
+      "Lawn Maintenance",
+      "Garden Maintenance"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="home">
+
+    <div class="container nav-container">
+
+      <a href="#home" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span>
+          <strong>MAHI</strong>
+          <small>Gardening Services</small>
+        </span>
+      </a>
+
+    <button
+  class="hamburger"
+  id="hamburger"
+  type="button"
+  aria-label="Open menu"
+  aria-expanded="false"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav class="main-nav" id="mainNav">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+      <div class="header-actions">
+        <a
+          href="tel:+917060619307"
+          class="icon-button call-button"
+          aria-label="Call MAHI Gardening"
+          title="Call us"
+        >
+          ☎
+        </a>
+
+        <a
+          href="https://wa.me/917060619307?text=Hello%20MAHI%20Gardening%2C%20I%20want%20to%20know%20about%20your%20services."
+          class="icon-button whatsapp-button"
+          target="_blank"
+          rel="noopener"
+          aria-label="Contact on WhatsApp"
+          title="WhatsApp us"
+        >
+          Ⓦ
+        </a>
+
+        <button
+          class="icon-button theme-toggle"
+          id="themeToggle"
+          aria-label="Switch between day and night mode"
+          title="Toggle day/night mode"
+        >
+          ☾
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <span class="eyebrow">🌱 Grow Green. Live Better.</span>
+
+          <h1>
+            Bring Nature
+            <span>Closer To You</span>
+          </h1>
+
+          <p>
+            Professional gardening, plant delivery and garden maintenance
+            services for homes, offices and commercial spaces in Gurgaon.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              Book a Service →
+            </a>
+
+            <a
+              href="https://wa.me/917060619307?text=Hello%20MAHI%20Gardening%2C%20I%20want%20to%20book%20a%20gardening%20service."
+              class="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+
+          <div class="hero-features">
+            <span>✓ Professional Service</span>
+            <span>✓ Trusted Team</span>
+            <span>✓ Affordable Pricing</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-circle"></div>
+
+          <div class="plant-card plant-card-one">
+            🌿
+          </div>
+
+          <div class="plant-card plant-card-two">
+            🪴
+          </div>
+
+          <div class="hero-main-plant">
+            🌱
+          </div>
+
+          <div class="floating-card">
+            <strong>Fresh Plants</strong>
+            <span>Delivered with care</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Our Gardening Services</h2>
+          <p>
+            Complete gardening solutions to make your surroundings beautiful,
+            fresh and green.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">🌳</div>
+            <h3>Garden Maintenance</h3>
+            <p>
+              Regular garden cleaning, trimming, watering and maintenance
+              for healthy plants.
+            </p>
+            <a href="#contact">Get Service →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🪴</div>
+            <h3>Plant Delivery</h3>
+            <p>
+              Get beautiful indoor and outdoor plants delivered safely to
+              your home or office.
+            </p>
+            <a href="#contact">Order Plants →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌱</div>
+            <h3>Lawn Care</h3>
+            <p>
+              Lawn mowing, grass maintenance and complete lawn care solutions
+              for green spaces.
+            </p>
+            <a href="#contact">Book Lawn Care →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌼</div>
+            <h3>Plant Setup</h3>
+            <p>
+              Beautiful plant setup and decoration for homes, offices,
+              balconies and events.
+            </p>
+            <a href="#contact">Know More →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌿</div>
+            <h3>Pruning & Trimming</h3>
+            <p>
+              Professional pruning and trimming to maintain the shape and
+              health of your plants.
+            </p>
+            <a href="#contact">Book Now →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏡</div>
+            <h3>Home Garden Setup</h3>
+            <p>
+              Transform your balcony, terrace or backyard into a beautiful
+              green garden.
+            </p>
+            <a href="#contact">Start Project →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <div class="about-image">
+            🌿
+          </div>
+
+          <div class="about-badge">
+            <strong>100%</strong>
+            <span>Green Care</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="eyebrow">About MAHI Gardening</span>
+
+          <h2>We Make Your Space Naturally Beautiful</h2>
+
+          <p>
+            MAHI Gardening & Plant Delivery Service is dedicated to providing
+            reliable and affordable gardening solutions for homes, offices
+            and commercial spaces.
+          </p>
+
+          <p>
+            Our goal is to make plant care simple, convenient and accessible
+            for everyone.
+          </p>
+
+          <ul class="about-list">
+            <li>✓ Experienced gardening support</li>
+            <li>✓ Quality plants and garden care</li>
+            <li>✓ Affordable and transparent service</li>
+            <li>✓ Customer-focused approach</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">
+            Contact Our Team
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Our Work</span>
+          <h2>Green Inspiration</h2>
+          <p>
+            Explore the beauty of plants, lawns and garden spaces.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card gallery-one">
+            <span>🌳</span>
+            <h3>Beautiful Gardens</h3>
+          </div>
+
+          <div class="gallery-card gallery-two">
+            <span>🪴</span>
+            <h3>Indoor Plants</h3>
+          </div>
+
+          <div class="gallery-card gallery-three">
+            <span>🌱</span>
+            <h3>Fresh Green Lawns</h3>
+          </div>
+
+          <div class="gallery-card gallery-four">
+            <span>🌼</span>
+            <h3>Flower Plants</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <span class="eyebrow">Get In Touch</span>
+
+          <h2>Let’s Make Your Space Green</h2>
+
+          <p>
+            Contact us today for gardening services, plant delivery and
+            garden maintenance.
+          </p>
+
+          <div class="contact-details">
+
+            <a href="tel:+917060619307" class="contact-item">
+              <span class="contact-item-icon">☎</span>
+              <span>
+                <strong>Call Us</strong>
+                <small>+91 70606 19307</small>
+              </span>
+            </a>
+
+            <a
+              href="https://wa.me/917060619307?text=Hello%20MAHI%20Gardening%2C%20I%20need%20your%20gardening%20services."
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+              <span class="contact-item-icon">Ⓦ</span>
+              <span>
+                <strong>WhatsApp</strong>
+                <small>Chat with our team</small>
+              </span>
+            </a>
+
+            <a
+              href="mailto:info@mahigardening.in?subject=Gardening%20Service%20Enquiry"
+              class="contact-item"
+            >
+              <span class="contact-item-icon">✉</span>
+              <span>
+                <strong>Email Us</strong>
+                <small>info@mahigardening.in</small>
+              </span>
+            </a>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">📍</span>
+              <span>
+                <strong>Service Area</strong>
+                <small>Gurgaon, Haryana</small>
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+          <h3>Send an Enquiry</h3>
+
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          >
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          >
+
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="Garden Maintenance">Garden Maintenance</option>
+            <option value="Plant Delivery">Plant Delivery</option>
+            <option value="Lawn Care">Lawn Care</option>
+            <option value="Plant Setup">Plant Setup</option>
+            <option value="Pruning & Trimming">Pruning & Trimming</option>
+            <option value="Home Garden Setup">Home Garden Setup</option>
+          </select>
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell us about your requirement"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary submit-button">
+            Send Enquiry →
+          </button>
+
+          <p class="form-note">
+            Your email application will open with the enquiry details.
+          </p>
+
+          <p id="formMessage" class="form-message"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon">🌿</span>
+          <span>
+            <strong>MAHI</strong>
+            <small>Gardening Services</small>
+          </span>
+        </a>
+
+        <p>
+          Bringing nature closer to your home, office and everyday life.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Contact</h3>
+        <a href="tel:+917060619307">Call Us</a>
+        <a
+          href="https://wa.me/917060619307"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+        <a href="mailto:info@mahigardening.in">Email</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="currentYear"></span> MAHI Gardening & Plant Delivery Service.
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const mainNav = document.getElementById("mainNav");
+  const themeToggle = document.getElementById("themeToggle");
+  const contactForm = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
+  const currentYear = document.getElementById("currentYear");
+
+  /* Current year */
+
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+  }
+
+  /* Mobile menu */
+
+  if (hamburger && mainNav) {
+    hamburger.addEventListener("click", function () {
+      const menuIsOpen = mainNav.classList.toggle("open");
+
+      hamburger.classList.toggle("active", menuIsOpen);
+      hamburger.setAttribute(
+        "aria-expanded",
+        menuIsOpen ? "true" : "false"
+      );
+    });
+
+    const menuLinks = mainNav.querySelectorAll("a");
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        mainNav.classList.remove("open");
+        hamburger.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  /* Day and night mode */
+
+  const savedTheme = localStorage.getItem("mahi-theme");
+
+  if (savedTheme === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    if (themeToggle) {
+      themeToggle.textContent = "☀";
+    }
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      const darkMode =
+        document.documentElement.getAttribute("data-theme") === "dark";
+
+      if (darkMode) {
+        document.documentElement.removeAttribute("data-theme");
+        themeToggle.textContent = "☾";
+        localStorage.setItem("mahi-theme", "light");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        themeToggle.textContent = "☀";
+        localStorage.setItem("mahi-theme", "dark");
+      }
+    });
+  }
+
+  /* Contact form */
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !phone || !service || !message) {
+        if (formMessage) {
+          formMessage.textContent = "Please fill in all fields.";
+        }
+
+        return;
+      }
+
+      const subject = encodeURIComponent(
+        "New Gardening Enquiry - " + service
+      );
+
+      const body = encodeURIComponent(
+        "Hello MAHI Gardening Team,\n\n" +
+          "Name: " +
+          name +
+          "\n" +
+          "Phone: " +
+          phone +
+          "\n" +
+          "Service: " +
+          service +
+          "\n\n" +
+          "Message:\n" +
+          message
+      );
+
+      window.location.href =
+        "mailto:info@mahigardening.in?subject=" +
+        subject +
+        "&body=" +
+        body;
+
+      if (formMessage) {
+        formMessage.textContent =
+          "Your email application is opening. Please send the email.";
+      };
+    });
+  }
+});
+    
+    
+    
+    
+  </script>
+</body>
+</html>
